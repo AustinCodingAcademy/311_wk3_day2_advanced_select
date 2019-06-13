@@ -1,4 +1,4 @@
-# SELECT Practice
+# Advanced SELECT
 
 ## Setup
 
