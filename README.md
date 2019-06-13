@@ -19,34 +19,38 @@ You should have created a Google Cloud account, installed MySQL Workbench and ma
 
 * Click the lightning bolt icon to run the query
 
-* If you refresh your schemas you should see a "users" table
+* If you refresh your schemas you should see a "users", "usersContact" and "usersAddress" table
 
 ## Part 2 - Query data
 
-We are going to run a couple SQL queries and put the answers in the "Query Responses" section of this README. The query instructions are intentionally written in plain english. It's up to you to translate that in a SELECT statement.
+We are going to run a couple SQL queries and put the answers in the "Query Responses" section of this README. The query instructions are intentionally written in plain english. It's up to you to translate that into a SELECT statement.
 
-1. Select all fields from users where the city equals Chicago
+1. Get a sum of all the user_ids from the `usersAddress` table grouped by state. Enter the values for the specific states below.
 
-2. Select the "state" field for users with a first name of "Glory"
+2. Find the most popular area code in the `usersContact` table. 
+  * Hint: SUBSTR, GROUP BY
 
-3. Select all fields from users who's phone1 starts with "773"
+3. Find the MIN first_name, the county, and a count of all users in that county for counties with more than 10 users. There will be four results. List the last one. 
+  * Hint: MIN, COUNT, JOIN, GROUP BY, HAVING
 
 
 ## Query Responses
 
-1.
-  * How many rows were returned:
-  * First name of the first user:
+1. Sums
+  * AK:
+  * CT
+  * TX:
+  * WY:
 
 2.
-  * How many rows were returned:
-  * What states do they live in:
+  * Area code:
 
 3.
-  * How many rows were returned:
-  * What's the last email on the list:
+  * first_name:
+  * county:
+  * county total:
 
 
-  ## Summary
+## Summary
 
-  Think about how this data is laid out. Feel free to look in the initialize.sql file to see the raw data. Do you think it would be easier or harder to search through this data manually or using SQL? What about when the dataset gets larger?
+We're starting to get pretty advanced with our SQL queries. Keep researching other advanced SELECT statements and get ready to foray into INSERT, UPDATE and DELETE.
