@@ -1,8 +1,8 @@
 -- #3 below
 SELECT
-	users.first_name as userName,
+    MIN(users.first_name) as userName,
     usersAddress.county as userCounty,
-    count(usersAddress.county) as countyUsers
+    count(usersAddress.county) as userCount
 FROM
 	users
 JOIN
@@ -10,9 +10,10 @@ JOIN
 WHERE
 	users.id = usersAddress.user_id
 GROUP BY
-	userCounty
+    userCounty
 HAVING
-	countyUsers > 10
+	userCount > 10
+
 
 
 -- #2 below
