@@ -46,7 +46,7 @@ We are going to run a couple SQL queries and put the answers in the "Query Respo
   * Area code: 201
 
 3.
-  * first_name:
+  * first_name:alaine
   * county:orange
   * county total:11
 
