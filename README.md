@@ -47,8 +47,8 @@ We are going to run a couple SQL queries and put the answers in the "Query Respo
 
 3.
   * first_name:
-  * county:
-  * county total:
+  * county:orange
+  * county total:11
 
 
 ## Summary
