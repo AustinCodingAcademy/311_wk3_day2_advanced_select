@@ -37,19 +37,33 @@ We are going to run a couple SQL queries and put the answers in the "Query Respo
 ## Query Responses
 
 1. Sums
-  * AK:
-  * CT
-  * TX:
-  * WY:
+  * AK:1422,
+  * CT:999,
+  * TX:7908,
+  * WY:1271,
 
 2.
-  * Area code:
+  * Area code:973=18times
 
 3.
   * first_name:
   * county:
   * county total:
 
+SELECT
+ min(first_name),
+count(users.id) as usersInCountyCount,
+county,
+max(usersInCountyCount)
+FROM 
+users
+ JOIN usersAddress
+ON
+users.id = usersAddress.user_id
+GROUP BY
+ county
+HAVING 
+usersInCountyCount > 10;
 
 ## Summary
 
