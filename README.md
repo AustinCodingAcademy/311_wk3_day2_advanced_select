@@ -46,6 +46,13 @@ GROUP BY state
 3. Find the MIN first_name, the county, and a count of all users in that county for counties with more than 10 users. There will be four results. List the last one. 
   * Hint: MIN, COUNT, JOIN, GROUP BY, HAVING
 
+SELECT min(first_name) AS shortName, county, count(*)
+FROM users
+JOIN usersAddress
+WHERE users.id = usersAddress.id
+GROUP BY county
+HAVING count(*) > 10
+
 
 ## Query Responses
 
@@ -56,12 +63,12 @@ GROUP BY state
   * WY: 1271
 
 2.
-  * Area code: 973
+  * Area code: 973 (18)
 
 3.
-  * first_name:
-  * county:
-  * county total:
+  * first_name: Avery
+  * county: Orange
+  * county total: 11
 
 
 ## Summary
