@@ -42,6 +42,7 @@ GROUP BY state
   area_code
   order by
   count(*) desc
+  limit 1
 
 3. Find the MIN first_name, the county, and a count of all users in that county for counties with more than 10 users. There will be four results. List the last one. 
   * Hint: MIN, COUNT, JOIN, GROUP BY, HAVING
