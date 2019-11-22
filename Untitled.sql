@@ -1,0 +1,3 @@
+SELECT *
+FROM users
+WHERE phone1 LIKE '773%'
