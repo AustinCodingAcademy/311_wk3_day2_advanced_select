@@ -37,10 +37,10 @@ We are going to run a couple SQL queries and put the answers in the "Query Respo
 ## Query Responses
 
 1. Sums
-  * AK:
-  * CT
-  * TX:
-  * WY:
+  * AK: 3000
+  * CT: 2500
+  * TX: 16000
+  * WY: 1500
 
 2.
   * Area code:
