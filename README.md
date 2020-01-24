@@ -37,18 +37,21 @@ We are going to run a couple SQL queries and put the answers in the "Query Respo
 ## Query Responses
 
 1. Sums
-  * AK:
-  * CT
-  * TX:
-  * WY:
+  * AK: 6
+  * CT: 5
+  * TX: 32
+  * WY: 3
 
 2.
-  * Area code:
+  * Area code: phone1 = 973 (count 18)
+               phone1 = 973 (count 18)
+               Total 36
+               The same counts showed up for both phone fields. Determination - the numbers in both fields are the same, only                    randomized. Neat.
 
 3.
-  * first_name:
-  * county:
-  * county total:
+  * first_name: Abel
+  * county: Orange
+  * county total: 11
 
 
 ## Summary
