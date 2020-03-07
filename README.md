@@ -37,18 +37,36 @@ We are going to run a couple SQL queries and put the answers in the "Query Respo
 ## Query Responses
 
 1. Sums
-  * AK:
-  * CT
-  * TX:
-  * WY:
+  * AK: 1422
+  * CT: 999
+  * TX: 7908
+  * WY: 1271
 
 2.
-  * Area code:
+  * Area code: 973
 
 3.
-  * first_name:
-  * county:
-  * county total:
+  * first_name: Alaine
+  * county: Orange
+  * county total: 11
+
+  An	Cook	13
+Alecia	Los Angeles	18
+Andra	New York	14
+Alaine	Orange	11
+
+My MySQL Code:
+
+SELECT sum(user_id) FROM usersAddress GROUP BY state HAVING state='AK';
+SELECT sum(user_id) FROM usersAddress GROUP BY state HAVING state='CT';
+SELECT sum(user_id) FROM usersAddress GROUP BY state HAVING state='TX';
+SELECT sum(user_id) FROM usersAddress GROUP BY state HAVING state='WY';
+
+SELECT SUBSTRING(phone1,1,3) as areaCode, count(*) as tally FROM usersContact GROUP BY areaCode ORDER BY tally;
+
+SELECT users.first_name, usersAddress.county FROM users JOIN usersAddress ON users.id=usersAddress.user_id;
+SELECT MIN(users.first_name), usersAddress.county, count(*) as counted FROM users JOIN usersAddress ON users.id=usersAddress.user_id GROUP BY usersAddress.county HAVING counted>10;
+
 
 
 ## Summary
