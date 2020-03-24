@@ -21,35 +21,39 @@ You should have created a Google Cloud account, installed MySQL Workbench and ma
 
 * If you refresh your schemas you should see a "users", "usersContact" and "usersAddress" table
 
-## Part 2 - Query data
-
+## Part 2 - Query data and Query Responses
 We are going to run a couple SQL queries and put the answers in the "Query Responses" section of this README. The query instructions are intentionally written in plain english. It's up to you to translate that into a SELECT statement.
 
-1. Get a sum of all the user_ids from the `usersAddress` table grouped by state. Enter the values for the specific states below.
+1. Sums - Get a sum of all the user_ids from the `usersAddress` table grouped by state. Enter the values for the specific states below.
+
+  * AK: 
+  <!-- 640 -->
+  * CT
+  <!-- 1556 -->
+  * TX:
+  <!-- 7435 -->
+  * WY:
+  <!-- 822 -->
+
 
 2. Find the most popular area code in the `usersContact` table. 
   * Hint: SUBSTR, GROUP BY
 
+  * Area code:
+  <!-- 973 -->
+
+
 3. Find the MIN first_name, the county, and a count of all users in that county for counties with more than 10 users. There will be four results. List the last one. 
   * Hint: MIN, COUNT, JOIN, GROUP BY, HAVING
 
-
-## Query Responses
-
-1. Sums
-  * AK:
-  * CT
-  * TX:
-  * WY:
-
-2.
-  * Area code:
-
-3.
   * first_name:
+  <!-- Abel -->
   * county:
+  <!-- Los Angeles -->
   * county total:
+  <!-- 9000 -->
 
+<!-- Couldnt Figure out this last select statement, and the tutors of 311 are somewhat lacking, will come back to this one when I understand what I am doing wrong, JE -->
 
 ## Summary
 
