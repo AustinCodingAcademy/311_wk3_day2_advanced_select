@@ -42,8 +42,9 @@ We are going to run a couple SQL queries and put the answers in the "Query Respo
   * TX: 7908
   * WY: 1271
 
-2. select count(*),substr(phone1,1,3) from userscontact group by substr(phone1,1,3)
-  * Area code: 212
+2. SELECT substr(phone1,1,3) As areaCode, count(substring(phone1,1,3)) As popularity FROM usersContact Group By areaCode Order By popularity DESC; 
+SELECT substr(phone2,1,3) As areaCode, count(substring(phone2,1,3)) As popularity FROM usersContact Group By areaCode Order By popularity DESC;
+  * Area code: 973
 
 3. select min(users.first_name), usersaddress.county, count(usersaddress.county) 
 from usersaddress 
