@@ -43,6 +43,7 @@ We are going to run a couple SQL queries and put the answers in the "Query Respo
   * WY: 1271
 
 2. SELECT substr(phone1,1,3) As areaCode, count(substring(phone1,1,3)) As popularity FROM usersContact Group By areaCode Order By popularity DESC; 
+
 SELECT substr(phone2,1,3) As areaCode, count(substring(phone2,1,3)) As popularity FROM usersContact Group By areaCode Order By popularity DESC;
   * Area code: 973
 
