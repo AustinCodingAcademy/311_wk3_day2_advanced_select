@@ -71,11 +71,13 @@ having users > 10
 
   ## Part 3 - Entity Relationship (ER) Diagram 
 
-In the MySQL Workbench menu, select Database -> Reverse Engineer.
-A dialog box should have appeared.
-In the first dropdown (stored connection), select the connect to your instance.
-Click "continue" three times until a list of databases appears. There should only be one ("admin").
-Select the "admin" database and continue accepting all other defaults
-You should see your ER diagram displayed.
-Hover over the tables to see the relationships (usersContact and usersAddress point back to users).
-Click around the diagram and discover other information about your tables.
+1. In the MySQL Workbench menu, select Database -> Reverse Engineer. A dialog box should have appeared.
+2. In the first dropdown (stored connection), select the connect to your instance.
+3. Click "continue" three times until a list of databases appears. There should only be one ("admin").
+4. Select the "admin" database and continue accepting all other defaults
+5. You should see your ER diagram displayed.
+6. Hover over the tables to see the relationships (usersContact and usersAddress point back to users).
+7. Click around the diagram and discover other information about your tables.
+
+EER Diagram:
+https://github.com/coastlines/311_wk3_day2_advanced_select/blob/master/EER_Diagram.mwb
