@@ -56,7 +56,7 @@ We are going to run a couple SQL queries and put the answers in the "Query Respo
 3.
 ```
 select
-	min(first_name)
+    min(first_name)
     , county
     , count(county) users
 from usersAddress a
