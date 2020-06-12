@@ -36,19 +36,20 @@ We are going to run a couple SQL queries and put the answers in the "Query Respo
 
 ## Query Responses
 
-1. Sums
-  * AK:
-  * CT
-  * TX:
-  * WY:
+1. Sums  
+Select  state, count(*) from usersAddress Group By state
+  * AK: 6
+  * CT 5
+  * TX: 32
+  * WY: 3
 
-2.
-  * Area code:
+2. Select substr(phone1, 1 , 3), count(substr(phone1, 1 , 3))  from usersContact group by substr(phone1, 1, 3) having count(substr(phone1, 1 , 3)) > 2
+  * Area code: 973
 
-3.
-  * first_name:
-  * county:
-  * county total:
+3. select usersaddress.county, count(usersaddress.county), min(users.first_name) from usersAddress join users where users.id=usersaddress.user_id group by county having count(usersAddress.county) > 10
+  * first_name: Alecia
+  * county: Los Angeles
+  * county total:17
 
 
 ## Summary
