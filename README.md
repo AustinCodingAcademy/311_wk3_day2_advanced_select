@@ -37,20 +37,50 @@ We are going to run a couple SQL queries and put the answers in the "Query Respo
 ## Query Responses
 
 1. Sums
-  * AK:
-  * CT
-  * TX:
-  * WY:
+  * AK: 1422 (count = 6)
+  * CT 999 (count = 5)
+  * TX: 7908 (count = 32)
+  * WY: 1271 (count = 3)
 
 2.
-  * Area code:
+  ```
+  select 
+      substring(phone1,1,3) as p1
+      , count(substring(phone1,1,3)) as p1_count
+      , substring(phone2,1,3) as p2
+      , count(substring(phone2,1,3)) as p2_count
+  from usersContact 
+  group by 1, 3 
+  order by 2 desc
+  limit 1
+  ```
+  * Area code: 973
 
 3.
-  * first_name:
-  * county:
-  * county total:
+```
+select
+    min(first_name)
+    , county
+    , count(county) users
+from usersAddress a
+left join users u
+on a.user_id = u.id
+group by 2
+having users > 10
+```
+  * first_name: Alaine
+  * county: Orange
+  * county total: 11
 
+  ## Part 3 - Entity Relationship (ER) Diagram 
 
-## Summary
+1. In the MySQL Workbench menu, select Database -> Reverse Engineer. A dialog box should have appeared.
+2. In the first dropdown (stored connection), select the connect to your instance.
+3. Click "continue" three times until a list of databases appears. There should only be one ("admin").
+4. Select the "admin" database and continue accepting all other defaults
+5. You should see your ER diagram displayed.
+6. Hover over the tables to see the relationships (usersContact and usersAddress point back to users).
+7. Click around the diagram and discover other information about your tables.
 
-We're starting to get pretty advanced with our SQL queries. Keep researching other advanced SELECT statements and get ready to foray into INSERT, UPDATE and DELETE.
+EER Diagram:
+https://github.com/coastlines/311_wk3_day2_advanced_select/blob/master/EER_Diagram.mwb
