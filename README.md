@@ -49,7 +49,10 @@ We are going to run a couple SQL queries and put the answers in the "Query Respo
       , count(substring(phone1,1,3)) as p1_count
       , substring(phone2,1,3) as p2
       , count(substring(phone2,1,3)) as p2_count
-  from usersContact group by 1, 3 order by 2 desc
+  from usersContact 
+  group by 1, 3 
+  order by 2 desc
+  limit 1
   ```
   * Area code: 973
 
