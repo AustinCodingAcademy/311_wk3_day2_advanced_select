@@ -2,20 +2,22 @@
 
 ## Setup
 
-You should have created a Google Cloud account, installed MySQL Workbench and made a connection to your database. In this lesson we will practice querying data.
+You should have already created a Google Cloud account, created an instance and built a database (yesterday), as wll as installed MySQL Workbench and made a connection to the database you've created.. In this lesson we will practice querying data.
 
 * Open MySQL Workbench
 
 ## Part 1 - Initialize data
 
-* Make sure you've selected the "admin" database
+We'll use the same database as we did yesterday but this new initialization will delete or `DROP` our existing table of `users` and replace it with three new tables: `usersAddress`, `users`, & `usersContact`. Do do this:
+
+* Make sure you've selected the "admin" database in MySQL Workbench
 
 * Create a new query tab
   * Click the button on the top left that has a SQL file with a "plus" icon on it
 
 * Click the folder icon in your query tab to open a new file
 
-* Select the "initialize.sql" script that lives in this repo
+* Select the "initialize.sql" script that lives in this repo (you've hopefully cloned it into your 311-JSDev folder or somewhere else)
 
 * Click the lightning bolt icon to run the query
 
