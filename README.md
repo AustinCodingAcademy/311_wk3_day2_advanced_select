@@ -55,4 +55,4 @@ We are going to run a couple SQL queries and put the answers in the "Query Respo
 
 ## Summary
 
-We're starting to get pretty advanced with our SQL queries. Keep researching other advanced SELECT statements and get ready to foray into INSERT, UPDATE and DELETE.
+We're starting to get pretty advanced with our SQL queries. Keep researching other advanced SELECT statements and get ready to foray into INSERT, UPDATE and DELETE, oh CRUD!.
