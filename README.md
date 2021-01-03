@@ -38,19 +38,22 @@ We are going to run a couple SQL queries and put the answers in the "Query Respo
 
 ## Query Responses
 
+// STATEMENT: SELECT state, SUM(user_id) FROM usersAddress GROUP BY state;
 1. Sums
-  * AK:
-  * CT
-  * TX:
-  * WY:
+  * AK: 1422
+  * CT: 999
+  * TX: 7908
+  * WY: 1271
 
-2.
-  * Area code:
+// STATEMENT: SELECT COUNT(*), SUBSTRING(phone1, 1, 3) AS area_code FROM usersContact GROUP BY area_code;
+2. 
+  * Area code: 973, count = 18.
 
+//STATEMENT: SELECT MIN(users.first_name), county, COUNT(*) AS minUsers FROM usersAddress JOIN users ON usersAddress.user_id=users.id GROUP BY county HAVING minUsers > 10;
 3.
-  * first_name:
-  * county:
-  * county total:
+  * first_name: Alaine
+  * county: Orange
+  * county total: 11
 
 
 ## Summary
