@@ -39,18 +39,61 @@ We are going to run a couple SQL queries and put the answers in the "Query Respo
 ## Query Responses
 
 1. Sums
+
+
+  SELECT
+    SUM(state LIKE 'TX')AS TX,
+      SUM(state LIKE 'AK')AS AK,
+      SUM(state LIKE 'CT')AS CT,
+      SUM(state LIKE 'WY')AS WY
+  FROM
+  usersaddress
+
+  OR
+
+  SELECT
+  state,
+  count(*)
+  FROM
+  usersaddress
+  GROUP BY state
+
+
   * AK:
+   6
   * CT
+   5
   * TX:
+   32
   * WY:
+   3
 
 2.
-  * Area code:
 
+  Select
+  phone1,
+  count(*)
+  FROM
+  userscontact
+  group by substr(phone1, 1, 3)
+
+  * Area code:
+  973
+  
 3.
-  * first_name:
-  * county:
-  * county total:
+
+select
+min(first_name),
+county,
+count(county) as countUsers
+from
+users
+inner join usersaddress on usersaddress.user_id = users.id
+group by county having countUsers > 10
+
+  * first_name: Alaine
+  * county: Orange
+  * county total: 11
 
 
 ## Summary
