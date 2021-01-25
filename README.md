@@ -2,13 +2,13 @@
 
 ## Setup
 
-You should have already created a Google Cloud account, created an instance and built a database (yesterday), as wll as installed MySQL Workbench and made a connection to the database you've created.. In this lesson we will practice querying data.
+You should have already created a Google Cloud account, created an instance and built a database (yesterday), as well as installed MySQL Workbench and made a connection to the database you've created.. In this lesson we will practice querying data.
 
 * Open MySQL Workbench
 
 ## Part 1 - Initialize data
 
-We'll use the same database as we did yesterday but this new initialization will delete or `DROP` our existing table of `users` and replace it with three new tables: `usersAddress`, `users`, & `usersContact`. Do do this:
+We'll use the same database as we did yesterday but this new initialization will delete or `DROP` our existing table of `users` and replace it with three new tables: `usersAddress`, `users`, & `usersContact`. To do this:
 
 * Make sure you've selected the "admin" database in MySQL Workbench
 
