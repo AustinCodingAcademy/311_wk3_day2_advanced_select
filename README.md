@@ -39,19 +39,30 @@ We are going to run a couple SQL queries and put the answers in the "Query Respo
 ## Query Responses
 
 1. Sums
-  * AK:
-  * CT
-  * TX:
-  * WY:
+  * AK: 6
+  * CT 5
+  * TX: 32
+  * WY: 3
 
 2.
-  * Area code:
+  * Area code: 973
 
 3.
   * first_name:
+  An 
+  Alecia
+  Andra
+  Alaine
   * county:
+  Cook
+  Los Angeles
+  New York
+  Orange
   * county total:
-
+ 13 
+ 18
+ 14
+ 11
 
 ## Summary
 
